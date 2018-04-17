@@ -1,0 +1,56 @@
+.add-comment {
+  display: none;
+  padding-top: 20px;
+
+  img {
+    border-radius: 48px;
+    display: block;
+    height: 48px;
+    width: 48px;
+  }
+
+  .add-comment-content {
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  input[type='text'] {
+    border-bottom: 2px solid #ccc;
+    display: block;
+    line-height: 25px;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  input:not([type='text']) {
+    background-color: #ddd;
+    border-radius: 2px;
+    color: #fff;
+    cursor: no-drop;
+    line-height: 19px;
+    margin: 10px 0;
+    padding: 8px 15px;
+  }
+
+  input.active {
+    background-color: #d93738;
+    cursor: pointer;
+  }
+
+  input[type='button'] {
+    background-color: #fff;
+    color: #a1a1a1;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+.clicked-comment.add-comment {
+  display: flex;
+}

@@ -1,0 +1,63 @@
+$opal-red: #d93738;
+$body-background-color: #ececec;
+$login-from-background-color: #fff;
+$input-border-color: #eee;
+
+.login-form {
+  background-color: $login-from-background-color;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+  font-family: 'Roboto', sans-serif;
+  min-width: calc(260px - 2rem);
+  padding: 1rem;
+  text-align: center;
+  width: 20%;
+
+  h1 {
+    color: $opal-red;
+  }
+
+  input {
+    display: block;
+    line-height: 2rem;
+    outline: none;
+    width: 100%;
+  }
+
+  input:not([type='submit']) {
+    background-color: transparent;
+    border-bottom: 1px solid $input-border-color;
+    color: rgb(0, 0, 0);
+    margin: .5rem 0;
+  }
+
+  input[type='submit'] {
+    background-color: $opal-red;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  input[type='submit'].logining {
+    background-color: rgb(128, 128, 128);
+  }
+
+  .register-link {
+    color: rgb(128, 128, 128);
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+  }
+
+  .error-message {
+    color: $opal-red;
+  }
+}
+
+main {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}

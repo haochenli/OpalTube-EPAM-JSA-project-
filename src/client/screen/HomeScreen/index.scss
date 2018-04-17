@@ -1,0 +1,260 @@
+.suggestedVideos {
+  width: 261px;
+  padding-right: 20px;
+}
+
+.homecontainer {
+  background-color:  #fff;
+  @media screen and (max-width: 415px) {
+    
+    .video-info{
+       .video-name {
+         .share{
+           height: initial;
+         }
+         .watchlater{
+           margin-left: .5em;
+           height: initial;
+         }
+        }
+      }
+
+    .comments-lists{
+      padding: 0 10px 20px 10px;
+      border-bottom: 1px solid #aaa;
+    }
+
+    header{
+      height: 3.375em;
+      .obstacle{
+        margin-left: 1em;
+      }
+    .right-top{
+      margin-right: 0;
+      img {
+        display: none;
+      }
+    .right-top-button{
+      display: none;
+    }
+  }
+  }
+   
+    .main {
+      display: block;
+      .add-comment{
+        input[type=button] {
+          height: 31px;
+          width: 80px;
+          font-size: .8rem;
+        }
+        input:not([type=text]){
+          height: 31px;
+          width: 88px;
+          font-size: .8rem;
+        }
+        .add-comment-content{
+          width: 80%;
+        }
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+        }
+       }
+     .comment{
+       .comment-container{
+        width: 80%;
+        .comment-content{
+          width: 100%;
+        }
+        .input-comment{
+          height:initial;
+          width: initial;
+          padding: 5px 10px;
+        }
+        .comment-time{
+          display: none;
+        }
+         .comment-setting{
+           right: 5px;
+         }
+       }
+          img {
+            height: 40px;
+            width: 40px;
+            
+          }
+   }
+      .navigationbar {
+        height: fit-content;
+        width: 100%;
+        flex-direction: row;
+        align-items: initial;
+        height: auto;
+        .homebutton:before{
+          margin: 29px 0;
+        }
+       .selected:after {
+          background-color: red;
+          content: "";
+          height: 48px;
+          left: 44%;
+          position: relative;
+          top: 20px;
+          transform: rotate(90deg);
+        }
+        a {
+          font-size: 0;
+        }
+        .subscription {
+          display: none;
+        }
+        div {
+          display: none;
+        }
+        span {
+          display: none;
+        }
+        .setting {
+          position: initial;
+        }
+      }
+      .suggestedVideos {
+        width: 100%;
+        padding-right: 20px;
+        text-align: center;
+        h1 {
+          text-align: center;
+        }
+        .suggested-video-ul {
+          width: 98%;
+          margin: 1% 1%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .suggested-video-list {
+            display: block;
+            margin-right: 0;
+          }
+        }
+      }
+      .videoComponent {
+        margin: 0;
+        width: 100%;
+        .video-below {
+          padding: 0 4px;
+          .user-info {
+            .userinfo-left {
+              width: 70%;
+            }
+            .thumb {
+              button {
+                font-size: 0;
+                height: 22px;
+                width: 30px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .suggested-video-container {
+      h1 {
+        margin: 20px 0;
+      }
+      .show-more-button {
+        width: 220px;
+        margin-bottom: 30px;
+      }
+    }
+    
+  }
+}
+
+.videoComponent {
+  margin-left:52px;
+  margin-right: 40px;
+  width: 68%;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+}
+
+.navigationbar {
+  margin-top: -37px;
+}
+
+.upload-form {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  padding: 10px 25px 20px 25px;
+  position: absolute;
+  right: 130px;
+  text-align: center;
+  top: 17px;
+  width: 270px;
+  z-index: 3;
+
+  input {
+    display: block;
+    line-height: 2rem;
+    outline: none;
+    width: 100%;
+  }
+
+  input:not([type='submit']) {
+    background-color: transparent;
+    border-bottom: 1px solid #eee;
+    color: rgb(0, 0, 0);
+    margin: .5rem 0;
+  }
+
+  button {
+    background-color: #d93738;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 7px;
+  }
+
+  button[type='submit'] {
+    margin-right: 20px;
+  }
+
+  .error-message {
+    color: #d93738;
+  }
+
+  button.loading {
+    background-color: rgb(128, 128, 128);
+    cursor: no-drop;
+  }
+
+  .loader {
+    animation: spin 1.5s linear infinite;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #d93738;
+    height: 70px;
+    left: calc(50% - 50px);
+    position: absolute;
+    top: calc(50% - 70px);
+    width: 70px;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}

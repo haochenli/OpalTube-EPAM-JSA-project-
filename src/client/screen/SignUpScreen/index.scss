@@ -1,0 +1,14 @@
+body,
+html,
+.root,
+.root > div {
+  height: 100%;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+

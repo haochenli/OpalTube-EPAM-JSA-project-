@@ -1,0 +1,92 @@
+.full-video-container {
+  padding: 20px;
+  width: 100%;
+
+  h1 {
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-bottom: .5rem;
+    padding: 0 12.5px;
+  }
+
+  .show-more-button {
+    background-color: #d93738;
+    color: rgb(255,255,255);
+    cursor: pointer;
+    font-size: .875rem;
+    height: 41px;
+    letter-spacing: 0;
+    line-height: 1rem;
+    width: 247px;
+    margin-bottom: 30px;    
+  }
+
+  .show-more-button-clicked {
+    display: none;
+  }
+  .suggested-video-list {
+    margin-right: 20px;
+  }
+}
+
+.suggested-video-ul {
+  width: 100%;
+}
+
+.suggested-video-list {
+  border-bottom: 1px solid #979797;
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 1.2rem;
+  padding: 0 12.5px;
+  padding-bottom: .5rem;
+  width: 220px;
+
+  .suggested-video {
+    height: 138px;
+    position: relative;
+    width: 220px;
+
+    a {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+    }
+
+    span {
+      background-color: rgba($color: #000, $alpha: .73);
+      border-radius: 100px;
+      bottom: 10px;
+      color: #fff;
+      font-size: .625rem;
+      line-height: .937rem;
+      padding: 0 8px;
+      position: absolute;
+      right: 10px;
+      text-align: center;
+    }
+  }
+
+  .title {
+    color: #070707;
+    font-size: .875rem;
+    font-weight: bold;
+    line-height: 1rem;
+    margin: .5rem 0 .3rem;
+  }
+
+  span {
+    color: #9b9b9b;
+    font-size: .625rem;
+    line-height: .75rem;
+  }
+
+  .video-message {
+    display: flex;
+    justify-content: space-between;
+  }
+}

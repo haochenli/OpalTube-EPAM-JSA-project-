@@ -1,0 +1,18 @@
+video {
+  width: 100%;
+}
+
+video::-webkit-media-controls-enclosure {
+  opacity: .7;
+  overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+  background-color: rgb(0, 0, 0);
+  width: calc(100% + 30px); /* Adjust as needed */
+}
+
+video::-internal-media-controls-download-button {
+  display: none;
+}
+

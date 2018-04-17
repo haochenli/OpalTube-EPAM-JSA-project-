@@ -1,0 +1,115 @@
+.comment {
+  background-color: #fff;
+  display: flex;
+  padding: 10px 0;
+
+  button {
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  img {
+    border-radius: 48px;
+    display: block;
+    height: 48px;
+    width: 48px;
+  }
+
+  .comment-container {
+    border-bottom: 1px solid #979797;
+    margin-left: 20px;
+    padding-bottom: 1.5rem;
+    position: relative;
+    width: 100%;
+
+    .username {
+      font-weight: bold;
+    }
+
+    .comment-content {
+      color: #333;
+      margin: 10px 0;
+      width: 80%;
+    }
+
+    .like-button {
+      background-image: url('./assets/thumb.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 16px;
+      width: 17px;
+    }
+
+    .dislike-button {
+      background-image: url('./assets/thumb.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 16px;
+      transform: rotate(180deg);
+      width: 17px;
+    }
+
+    .clicked {
+      background-image: url('./assets/thumb-clicked.png');
+    }
+
+    .clicked + span {
+      color: #d93738;
+    }
+
+    .like-num,
+    .dislike-num {
+      color: #ddd;
+      display: inline-block;
+      font-size: 14px;
+      height: 16px;
+      line-height: 16px;
+      margin: 0 .5rem;
+      visibility: visible;
+    }
+
+    .input-comment {
+      background-color: #f6f6f6;
+      border-radius: 4px;
+      color: #333;
+      display: block;
+      height: 41px;
+      line-height: 19px;
+      margin-top: 10px;
+      width: 100px;
+    }
+
+    .comment-time {
+      color: rgba(0, 0, 0, .38);
+      font-size: 14px;
+      position: absolute;
+      right: 20px;
+      top: 29px;
+    }
+  }
+}
+
+.comments-lists > .add-comment {
+  background: #fff;
+  display: flex;  
+}
+
+.comments-lists {
+  position: relative;
+
+  .loader {
+    animation: spin 1.5s linear infinite;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #d93738;
+    height: 100px;
+    left: calc(50% - 100px);
+    position: absolute;
+    top: 65px;
+    width: 100px
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
